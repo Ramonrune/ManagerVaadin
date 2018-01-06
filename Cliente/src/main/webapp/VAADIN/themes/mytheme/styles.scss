@@ -6,8 +6,8 @@
 // The actual styles should be defined in mytheme.scss
 $v-luminance-threshold: 180 !default;
 
-$editor-background-color: #487da5 !default;
-$valo-menu-background-color: #487da5;
+$editor-background-color: #fafafa !default;
+$valo-menu-background-color: #fafafa;
 
 $v-focus-color: rgb(96, 160, 234) !default;
 $v-error-indicator-color: #eb2977 !default;
@@ -316,5 +316,20 @@ $v-layout-spacing-horizontal: round($v-unit-size / 1.8) !default;
   .align-right {
   	text-align: right;
   }
+ 
+  .mytheme .valo-menu{
+  	font-size: 16px !important;
+    line-height: 40px !important;
+  }
+ 
+ 
+ .mytheme .valo-menu-item:focus, .mytheme .valo-menu-item:hover, .mytheme .valo-menu-item.selected {
+	 background: #dee2e4;
+   }
+  
+  .mytheme .valo-menu-item.selected .v-icon {
+	  color: black !important;
+	}
+   
 
 }

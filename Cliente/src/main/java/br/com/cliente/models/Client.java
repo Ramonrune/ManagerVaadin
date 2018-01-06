@@ -20,7 +20,6 @@ public class Client {
 	@NotNull
 	private String telephone;
 	
-	private String photo;
 	
 	public Integer getId() {
 		return id;
@@ -46,9 +45,7 @@ public class Client {
 	public void setTelephone(String telephone) {
 		this.telephone = telephone;
 	}	
-	public String getPhoto() {
-		return this.photo;
-	}
+
 	
 	
 	

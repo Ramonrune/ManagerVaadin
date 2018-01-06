@@ -1634,14 +1634,6 @@ div.v-layout.v-horizontal.v-widget {
 .new-client-window {
 	left: unset !important;
 	right: 0px !important;
-	background: #27668c !important;
-}
-
-.mytheme .v-window-closebox-disabled + .v-window-closebox, .mytheme .v-window-resizebox-disabled + .v-window-closebox, .mytheme .v-window-restorebox-disabled + .v-window-closebox, .mytheme .v-window-maximizebox-disabled + .v-window-closebox {
-	background: #27668c !important;
-	color: white !important;
-	font-weight: bold !important;
-	font-size: 50px !important;
 }
 
 .mytheme.v-app, .mytheme.v-app-loading {
@@ -14476,13 +14468,13 @@ div.v-layout.v-horizontal.v-widget {
 
 .mytheme .valo-menu {
 	height: 100%;
-	background-color: #487da5;
-	background-image: -webkit-linear-gradient(right, #427297 0%, #487da5 9px);
-	background-image: linear-gradient(to left,#427297 0%, #487da5 9px);
-	color: #a7becf;
+	background-color: #fafafa;
+	background-image: -webkit-linear-gradient(right, #f0f0f0 0%, #fafafa 9px);
+	background-image: linear-gradient(to left,#f0f0f0 0%, #fafafa 9px);
+	color: #7d7d7d;
 	font-size: 14px;
 	line-height: 30px;
-	border-right: 1px solid #386282;
+	border-right: 1px solid #c5c5c5;
 	white-space: nowrap;
 }
 
@@ -14496,7 +14488,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .valo-menu-part {
-	border-left: 1px solid #3e6d90;
+	border-left: 1px solid #dadada;
 	height: 100%;
 	padding-bottom: 37px;
 	overflow: auto;
@@ -14659,13 +14651,13 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .valo-menu-subtitle {
-	color: #86a8c2;
+	color: #a8a8a8;
 	margin: 7px 0 7px 19px;
-	border-bottom: 1px solid #6390b2;
+	border-bottom: 1px solid #d4d4d4;
 }
 
 .mytheme .valo-menu-subtitle [class*="badge"] {
-	color: #74abe1;
+	color: #2f6193;
 }
 
 .mytheme .valo-menuitems {
@@ -14679,7 +14671,7 @@ div.v-layout.v-horizontal.v-widget {
 	cursor: pointer;
 	position: relative;
 	overflow: hidden;
-	text-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+	text-shadow: 0 -2px 0 rgba(255, 255, 255, 0.05);
 	-webkit-transition: background-color 300ms, color 60ms;
 	-moz-transition: background-color 300ms, color 60ms;
 	transition: background-color 300ms, color 60ms;
@@ -14696,26 +14688,26 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .valo-menu-item [class*="badge"] {
-	color: #74abe1;
+	color: #197de1;
 }
 
 .mytheme .valo-menu-item.selected {
-	background: #43759a;
+	background: white;
 }
 
 .mytheme .valo-menu-item.selected .v-icon {
-	color: #4396ea;
+	color: #197de1;
 }
 
 .mytheme .valo-menu-item.selected [class*="badge"] {
-	background-color: #4396ea;
-	background-image: -webkit-linear-gradient(top, #489eeb 2%, #3a87de 98%);
-	background-image: linear-gradient(to bottom,#489eeb 2%, #3a87de 98%);
-	color: #d3e2f1;
+	background-color: #197de1;
+	background-image: -webkit-linear-gradient(top, #1b87e3 2%, #166ed5 98%);
+	background-image: linear-gradient(to bottom,#1b87e3 2%, #166ed5 98%);
+	color: #c8dbed;
 }
 
 .mytheme .valo-menu-item:focus, .mytheme .valo-menu-item:hover, .mytheme .valo-menu-item.selected {
-	color: white;
+	color: black;
 }
 
 .mytheme .valo-menu-item span.v-icon {
@@ -14731,7 +14723,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .valo-menu-item [class*="badge"] {
-	background-color: #538ab4;
+	background-color: white;
 	-webkit-transition: background-color 300ms;
 	-moz-transition: background-color 300ms;
 	transition: background-color 300ms;
@@ -14744,7 +14736,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .valo-menu-part.large-icons {
-	background-color: #487da5;
+	background-color: #fafafa;
 	min-width: 74px;
 	max-width: 111px;
 }
@@ -14775,7 +14767,7 @@ div.v-layout.v-horizontal.v-widget {
 	border: none;
 	text-overflow: ellipsis;
 	overflow: hidden;
-	background: #3f6d90;
+	background: #ebebeb;
 	font-size: 13px;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
 }
@@ -14794,7 +14786,7 @@ div.v-layout.v-horizontal.v-widget {
 	line-height: 1;
 	padding: 12px;
 	text-align: center;
-	border-top: 1px solid #5284aa;
+	border-top: 1px solid #ebebeb;
 }
 
 .mytheme .valo-menu-part.large-icons .valo-menu-item:first-child {
@@ -14819,7 +14811,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .valo-menu-part.large-icons .valo-menu-item.selected {
-	background: #43759a;
+	background: white;
 }
 
 .mytheme .valo-menu-part.large-icons .valo-menu-item.selected .v-icon {
@@ -14827,7 +14819,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .valo-menu-part.large-icons .valo-menu-item.selected [class*="badge"] {
-	border-color: #43759a;
+	border-color: #f2f2f2;
 }
 
 .mytheme .valo-menu-part.large-icons .valo-menu-item [class*="badge"] {
@@ -14835,7 +14827,7 @@ div.v-layout.v-horizontal.v-widget {
 	padding-right: 4px;
 	top: 7px;
 	right: 7px;
-	border: 2px solid #487da5;
+	border: 2px solid #fafafa;
 }
 
 .mytheme .valo-menu-logo {
@@ -14861,7 +14853,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part {
-	background-color: #487da5;
+	background-color: #fafafa;
 	min-width: 74px;
 	max-width: 111px;
 }
@@ -14892,7 +14884,7 @@ div.v-layout.v-horizontal.v-widget {
 	border: none;
 	text-overflow: ellipsis;
 	overflow: hidden;
-	background: #3f6d90;
+	background: #ebebeb;
 	font-size: 13px;
 	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
 }
@@ -14911,7 +14903,7 @@ div.v-layout.v-horizontal.v-widget {
 	line-height: 1;
 	padding: 12px;
 	text-align: center;
-	border-top: 1px solid #5284aa;
+	border-top: 1px solid #ebebeb;
 }
 
 .mytheme .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item:first-child {
@@ -14936,7 +14928,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item.selected {
-	background: #43759a;
+	background: white;
 }
 
 .mytheme .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item.selected .v-icon {
@@ -14944,7 +14936,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item.selected [class*="badge"] {
-	border-color: #43759a;
+	border-color: #f2f2f2;
 }
 
 .mytheme .valo-menu-responsive[width-range~="801px-1100px"] .valo-menu-part .valo-menu-item [class*="badge"] {
@@ -14952,7 +14944,7 @@ div.v-layout.v-horizontal.v-widget {
 	padding-right: 4px;
 	top: 7px;
 	right: 7px;
-	border: 2px solid #487da5;
+	border: 2px solid #fafafa;
 }
 
 .mytheme .valo-menu-responsive[width-range~="0-800px"] {
@@ -15022,13 +15014,13 @@ div.v-layout.v-horizontal.v-widget {
 
 .mytheme .valo-menu-responsive[width-range~="0-800px"] .valo-menuitems {
 	height: 100%;
-	background-color: #487da5;
-	background-image: -webkit-linear-gradient(right, #427297 0%, #487da5 9px);
-	background-image: linear-gradient(to left,#427297 0%, #487da5 9px);
-	color: #a7becf;
+	background-color: #fafafa;
+	background-image: -webkit-linear-gradient(right, #f0f0f0 0%, #fafafa 9px);
+	background-image: linear-gradient(to left,#f0f0f0 0%, #fafafa 9px);
+	color: #7d7d7d;
 	font-size: 14px;
 	line-height: 30px;
-	border-right: 1px solid #386282;
+	border-right: 1px solid #c5c5c5;
 	white-space: nowrap;
 	position: fixed;
 	z-index: 9000;
@@ -15067,7 +15059,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .login-screen {
-	background: #487da5;
+	background: #fafafa;
 	background-image: url(img/archetype-login-bg.jpg);
 	background-size: cover;
 	background-position: 50% 50%;
@@ -15137,8 +15129,8 @@ div.v-layout.v-horizontal.v-widget {
 	height: 100%;
 	overflow: auto;
 	padding: 12px 12px;
-	background-color: #487da5;
-	color: #dde5ea;
+	background-color: #fafafa;
+	color: #323232;
 }
 
 .mytheme .product-form-wrapper .v-textfield {
@@ -15159,11 +15151,11 @@ div.v-layout.v-horizontal.v-widget {
 	height: 37px;
 	border-radius: 4px;
 	padding: 4px 9px;
-	border: 1px solid #325874;
-	background: #407093;
-	color: #cbd7e0;
-	-webkit-box-shadow: inset 0 1px 0 #3f6c8d, 0 1px 0 rgba(255, 255, 255, 0.1);
-	box-shadow: inset 0 1px 0 #3f6c8d, 0 1px 0 rgba(255, 255, 255, 0.1);
+	border: 1px solid #bbbbbb;
+	background: #ededed;
+	color: #424242;
+	-webkit-box-shadow: inset 0 1px 0 #e6e6e6, 0 1px 0 rgba(255, 255, 255, 0.1);
+	box-shadow: inset 0 1px 0 #e6e6e6, 0 1px 0 rgba(255, 255, 255, 0.1);
 	-webkit-transition: box-shadow 180ms, border 180ms;
 	-moz-transition: box-shadow 180ms, border 180ms;
 	transition: box-shadow 180ms, border 180ms;
@@ -15180,14 +15172,14 @@ div.v-layout.v-horizontal.v-widget {
 	-moz-transition: none;
 	transition: none;
 	border-color: #197de1;
-	-webkit-box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5), inset 0 1px 0 #3f6c8d, 0 1px 0 rgba(255, 255, 255, 0.1);
-	box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5), inset 0 1px 0 #3f6c8d, 0 1px 0 rgba(255, 255, 255, 0.1);
+	-webkit-box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5), inset 0 1px 0 #e6e6e6, 0 1px 0 rgba(255, 255, 255, 0.1);
+	box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5), inset 0 1px 0 #e6e6e6, 0 1px 0 rgba(255, 255, 255, 0.1);
 	-webkit-box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
 	box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
 }
 
 .mytheme .product-form-wrapper .v-textfield[class*="prompt"] {
-	color: #72a6cc;
+	color: #979797;
 }
 
 .mytheme .product-form-wrapper .v-checkbox {
@@ -15221,11 +15213,11 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 :root .mytheme .product-form-wrapper .v-checkbox > input:focus ~ label:before {
-	border: 1px solid #4f7694;
+	border-color: #197de1;
 	-webkit-box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
 	box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
-	-webkit-box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5), inset 0 1px 0 #94adc6, inset 0 -1px 0 #5682a7, 0 2px 3px rgba(0, 0, 0, 0.05);
-	box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5), inset 0 1px 0 #94adc6, inset 0 -1px 0 #5682a7, 0 2px 3px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5), inset 0 1px 0 white, inset 0 -1px 0 #ececec, 0 2px 3px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5), inset 0 1px 0 white, inset 0 -1px 0 #ececec, 0 2px 3px rgba(0, 0, 0, 0.05);
 }
 
 :root .mytheme .product-form-wrapper .v-checkbox > input ~ label:before, :root .mytheme .product-form-wrapper .v-checkbox > input ~ label:after {
@@ -15245,20 +15237,20 @@ div.v-layout.v-horizontal.v-widget {
 :root .mytheme .product-form-wrapper .v-checkbox > input ~ label:before {
 	height: 18.5px;
 	padding: 0 9px;
-	color: #f2f4f6;
+	color: #1a1a1a;
 	font-weight: 400;
 	
 	
 	border-radius: 4px;
-	border: 1px solid #4f7694;
-	border-top-color: #557c98;
-	border-bottom-color: #456a89;
-	background-color: #6496bc;
-	background-image: -webkit-linear-gradient(top, #6c9ec1 2%, #5887ae 98%);
-	background-image: linear-gradient(to bottom,#6c9ec1 2%, #5887ae 98%);
-	-webkit-box-shadow: inset 0 1px 0 #94adc6, inset 0 -1px 0 #5682a7, 0 2px 3px rgba(0, 0, 0, 0.05);
-	box-shadow: inset 0 1px 0 #94adc6, inset 0 -1px 0 #5682a7, 0 2px 3px rgba(0, 0, 0, 0.05);
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.05);
+	border: 1px solid #c5c5c5;
+	border-top-color: #c5c5c5;
+	border-bottom-color: #bcbcbc;
+	background-color: white;
+	background-image: -webkit-linear-gradient(top, white 2%, #f4f4f4 98%);
+	background-image: linear-gradient(to bottom,white 2%, #f4f4f4 98%);
+	-webkit-box-shadow: inset 0 1px 0 white, inset 0 -1px 0 #ececec, 0 2px 3px rgba(0, 0, 0, 0.05);
+	box-shadow: inset 0 1px 0 white, inset 0 -1px 0 #ececec, 0 2px 3px rgba(0, 0, 0, 0.05);
+	text-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
 	padding: 0;
 	height: 19px;
 }
@@ -15273,7 +15265,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 :root .mytheme .product-form-wrapper .v-checkbox > input:active ~ label:after {
-	background-color: rgba(27, 78, 117, 0.2);
+	background-color: rgba(128, 128, 128, 0.2);
 }
 
 :root .mytheme .product-form-wrapper .v-checkbox > input:checked ~ label:after {
@@ -15341,13 +15333,13 @@ div.v-layout.v-horizontal.v-widget {
 	height: 37px;
 	border-radius: 4px;
 	padding: 4px 9px;
-	border: 1px solid #386282;
-	background-color: #6496bc;
-	background-image: -webkit-linear-gradient(top, #6c9ec1 2%, #5887ae 98%);
-	background-image: linear-gradient(to bottom,#6c9ec1 2%, #5887ae 98%);
-	color: #d8e1e8;
-	-webkit-box-shadow: inset 0 1px 0 #94adc6, inset 0 -1px 0 #5682a7, 0 1px 0 rgba(255, 255, 255, 0.1);
-	box-shadow: inset 0 1px 0 #94adc6, inset 0 -1px 0 #5682a7, 0 1px 0 rgba(255, 255, 255, 0.1);
+	border: 1px solid #c5c5c5;
+	background-color: white;
+	background-image: -webkit-linear-gradient(top, white 2%, #f4f4f4 98%);
+	background-image: linear-gradient(to bottom,white 2%, #f4f4f4 98%);
+	color: #474747;
+	-webkit-box-shadow: inset 0 1px 0 white, inset 0 -1px 0 #ececec, 0 1px 0 rgba(255, 255, 255, 0.1);
+	box-shadow: inset 0 1px 0 white, inset 0 -1px 0 #ececec, 0 1px 0 rgba(255, 255, 255, 0.1);
 	-webkit-transition: box-shadow 180ms, border 180ms;
 	-moz-transition: box-shadow 180ms, border 180ms;
 	transition: box-shadow 180ms, border 180ms;
@@ -15368,14 +15360,14 @@ div.v-layout.v-horizontal.v-widget {
 	-moz-transition: none;
 	transition: none;
 	border-color: #197de1;
-	-webkit-box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5), inset 0 1px 0 #94adc6, inset 0 -1px 0 #5682a7, 0 1px 0 rgba(255, 255, 255, 0.1);
-	box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5), inset 0 1px 0 #94adc6, inset 0 -1px 0 #5682a7, 0 1px 0 rgba(255, 255, 255, 0.1);
+	-webkit-box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5), inset 0 1px 0 white, inset 0 -1px 0 #ececec, 0 1px 0 rgba(255, 255, 255, 0.1);
+	box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5), inset 0 1px 0 white, inset 0 -1px 0 #ececec, 0 1px 0 rgba(255, 255, 255, 0.1);
 	-webkit-box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
 	box-shadow: 0 0 0 2px rgba(25, 125, 225, 0.5);
 }
 
 .mytheme .product-form-wrapper .v-filterselect [class*="input"][class*="prompt"] {
-	color: #8ebde2;
+	color: #a3a3a3;
 }
 
 .mytheme .product-form-wrapper .v-filterselect .v-icon + [class*="input"] {
@@ -15388,7 +15380,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .product-form-wrapper .v-filterselect span.v-icon {
-	color: #d8e1e8;
+	color: #474747;
 	width: 37px;
 	line-height: 1;
 	padding-top: 0.12em;
@@ -15396,7 +15388,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .product-form-wrapper .v-filterselect[class*="prompt"] > [class*="input"] {
-	color: #8ebde2;
+	color: #a3a3a3;
 }
 
 .mytheme .product-form-wrapper .v-filterselect [class$="button"] {
@@ -15408,8 +15400,8 @@ div.v-layout.v-horizontal.v-widget {
 	top: 1px;
 	right: 1px;
 	bottom: 1px;
-	border-left: 1px solid #5986a8;
-	color: #9ebbd2;
+	border-left: 1px solid #e4e4e4;
+	color: #a3a3a3;
 	border-radius: 0 3px 3px 0;
 }
 
@@ -15428,7 +15420,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .product-form-wrapper .v-filterselect [class$="button"]:hover:before {
-	color: #d8e1e8;
+	color: #474747;
 }
 
 .mytheme .product-form-wrapper .v-filterselect [class$="button"]:active:after {
@@ -15439,7 +15431,7 @@ div.v-layout.v-horizontal.v-widget {
 	bottom: 0;
 	left: 0;
 	border-radius: inherit;
-	background-color: rgba(27, 78, 117, 0.2);
+	background-color: rgba(128, 128, 128, 0.2);
 }
 
 .mytheme .product-form-wrapper .v-filterselect.v-disabled {
@@ -15482,7 +15474,7 @@ div.v-layout.v-horizontal.v-widget {
 }
 
 .mytheme .product-form-wrapper .v-caption {
-	color: #a7becf;
+	color: #7d7d7d;
 }
 
 .mytheme .product-form-wrapper .form-layout > .v-expand > .v-slot:last-child {
@@ -15645,4 +15637,17 @@ div.v-layout.v-horizontal.v-widget {
 
 .mytheme .align-right {
 	text-align: right;
+}
+
+.mytheme .mytheme .valo-menu {
+	font-size: 16px !important;
+	line-height: 40px !important;
+}
+
+.mytheme .mytheme .valo-menu-item:focus, .mytheme .mytheme .valo-menu-item:hover, .mytheme .mytheme .valo-menu-item.selected {
+	background: #dee2e4;
+}
+
+.mytheme .mytheme .valo-menu-item.selected .v-icon {
+	color: black !important;
 }

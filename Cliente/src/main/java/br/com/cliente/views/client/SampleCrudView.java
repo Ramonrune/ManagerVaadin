@@ -15,7 +15,7 @@ import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
 
 import br.com.cliente.conf.MyUI;
-import br.com.cliente.views.client.window.NewClientWindow;
+import br.com.cliente.views.client.window.NewClientWindowImpl;
 
 /**
  * A view for performing create-read-update-delete operations on products.
@@ -29,7 +29,7 @@ public class SampleCrudView extends CssLayout implements View {
     private ClientGrid grid;
     private TextField filter;
     private Button newProduct;
-    private NewClientWindow newClientWindow;
+    private NewClientWindowImpl newClientWindow;
 
 
     public SampleCrudView() {
@@ -62,7 +62,7 @@ public class SampleCrudView extends CssLayout implements View {
         newProduct.setIcon(VaadinIcons.PLUS_CIRCLE);
         newProduct.addClickListener((event) ->{
         	if(newClientWindow == null)
-        		newClientWindow = new NewClientWindow();
+        		newClientWindow = new NewClientWindowImpl();
         	
         	MyUI.get().addWindow(newClientWindow);
         });
