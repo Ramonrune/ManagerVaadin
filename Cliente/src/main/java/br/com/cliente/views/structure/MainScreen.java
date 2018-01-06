@@ -3,16 +3,14 @@ package br.com.cliente.views.structure;
 import com.vaadin.icons.VaadinIcons;
 import com.vaadin.navigator.Navigator;
 import com.vaadin.navigator.ViewChangeListener;
-import com.vaadin.navigator.ViewChangeListener.ViewChangeEvent;
 import com.vaadin.ui.CssLayout;
 import com.vaadin.ui.HorizontalLayout;
-import com.vaadin.ui.Label;
-
 import br.com.cliente.conf.MyUI;
 import br.com.cliente.views.client.SampleCrudView;
 
 public class MainScreen extends HorizontalLayout {
 
+	private static final long serialVersionUID = 1L;
 	private Menu menu;
 
 	public MainScreen(MyUI ui) {
@@ -37,9 +35,10 @@ public class MainScreen extends HorizontalLayout {
 		setSizeFull();
 	}
 
-	// notify the view menu about view changes so that it can display which view
-	// is currently active
 	ViewChangeListener viewChangeListener = new ViewChangeListener() {
+
+		
+		private static final long serialVersionUID = 1L;
 
 		@Override
 		public boolean beforeViewChange(ViewChangeEvent event) {

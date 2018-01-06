@@ -17,15 +17,14 @@ import com.vaadin.ui.themes.ValoTheme;
 import br.com.cliente.models.Client;
 import br.com.cliente.views.client.window.NewClientWindowPresenter;
 
-/**
- * A view for performing create-read-update-delete operations on products.
- *
- * See also {@link SampleCrudLogic} for fetching the data, the actual CRUD
- * operations and controlling the view based on events from outside.
- */
+
 public class SampleCrudView extends CssLayout implements View {
 	
-    private ClientDataProvider dataProvider = new ClientDataProvider();
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private ClientDataProvider dataProvider = new ClientDataProvider();
 	private NewClientWindowPresenter newClientWindowPresenter = new NewClientWindowPresenter(dataProvider);
     public static final String VIEW_NAME = "Clientes";
     private ClientGrid grid;

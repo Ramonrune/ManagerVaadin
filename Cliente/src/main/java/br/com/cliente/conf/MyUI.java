@@ -1,21 +1,14 @@
 package br.com.cliente.conf;
 
-
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Viewport;
 import com.vaadin.server.Responsive;
 import com.vaadin.server.VaadinRequest;
-import com.vaadin.ui.Button;
-import com.vaadin.ui.Label;
-import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
-import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
-
 import br.com.cliente.auth.AccessControl;
 import br.com.cliente.auth.BasicAccessControl;
 import br.com.cliente.auth.LoginScreen;
-import br.com.cliente.auth.LoginScreen.LoginListener;
 import br.com.cliente.views.structure.MainScreen;
 
 @Viewport("user-scalable=no,initial-scale=1.0")
@@ -32,11 +25,10 @@ public class MyUI extends UI {
 		setLocale(vaadinRequest.getLocale());
 		getPage().setTitle("Cliente");
 		if (!accessControl.isUserSignedIn()) {
-			setContent(new LoginScreen(accessControl, new LoginListener() {
-				@Override
-				public void loginSuccessful() {
-					showMainView();
-				}
+			setContent(new LoginScreen(accessControl, () -> {
+
+				showMainView();
+
 			}));
 		} else {
 			showMainView();

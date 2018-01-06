@@ -6,9 +6,9 @@ import com.vaadin.data.Binder;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.Window;
 
-import br.com.cliente.models.Client;
-
 public abstract class CustomWindow<E> extends Window{
+	
+	private static final long serialVersionUID = 1L;
 	private Supplier<E> supplier;
 
 	public CustomWindow(Supplier<E> supplier) {

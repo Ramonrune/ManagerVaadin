@@ -7,6 +7,7 @@ import br.com.cliente.models.User;
 import junit.framework.Assert;
 import junit.framework.TestCase;
 
+@SuppressWarnings("deprecation")
 public class UserTest extends TestCase {
 
 	

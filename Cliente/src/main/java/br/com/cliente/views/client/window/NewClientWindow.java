@@ -1,21 +1,15 @@
 package br.com.cliente.views.client.window;
 
-import java.util.ArrayList;
-import java.util.List;
 
-import com.vaadin.data.Binder;
 import com.vaadin.data.ValidationException;
 import com.vaadin.data.validator.StringLengthValidator;
 import com.vaadin.ui.Alignment;
 import com.vaadin.ui.Button;
-import com.vaadin.ui.Button.ClickEvent;
-import com.vaadin.ui.Button.ClickListener;
 import com.vaadin.ui.Component;
 import com.vaadin.ui.HorizontalLayout;
 import com.vaadin.ui.Notification;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
-import com.vaadin.ui.Window;
 import com.vaadin.ui.themes.ValoTheme;
 
 import br.com.cliente.models.Client;
@@ -23,6 +17,7 @@ import br.com.cliente.views.CustomWindow;
 
 class NewClientWindow extends CustomWindow<Client> implements NewClientWindowCrud{
 
+	private static final long serialVersionUID = 1L;
 	private NewClientWindowCrud.NewClientWindowCrudListener listener;
 	private Client client = get();
 	private TextField nameTxtField;

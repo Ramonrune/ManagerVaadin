@@ -1,8 +1,6 @@
 package br.com.cliente.views.client;
 
-import java.util.Locale;
 import java.util.Objects;
-import java.util.function.Supplier;
 import java.util.stream.Stream;
 
 import com.vaadin.data.provider.AbstractDataProvider;
@@ -13,6 +11,7 @@ import br.com.cliente.models.Client;
 
 public class ClientDataProvider extends AbstractDataProvider<Client, String> {
 
+	private static final long serialVersionUID = 1L;
 
 	@Override
 	public Integer getId(Client client) {

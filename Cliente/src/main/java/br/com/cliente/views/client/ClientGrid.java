@@ -1,18 +1,17 @@
 package br.com.cliente.views.client;
 
-import java.text.DecimalFormat;
-import java.util.Comparator;
-import java.util.stream.Collectors;
-import com.vaadin.icons.VaadinIcons;
+
 import com.vaadin.ui.Grid;
-import com.vaadin.ui.renderers.HtmlRenderer;
 import com.vaadin.ui.renderers.NumberRenderer;
 
 import br.com.cliente.models.Client;
 
 public class ClientGrid extends Grid<Client> {
 	
-    public ClientGrid() {
+
+	private static final long serialVersionUID = 1L;
+
+	public ClientGrid() {
         setSizeFull();
 
         addColumn(Client::getId, new NumberRenderer()).setCaption("Id");
