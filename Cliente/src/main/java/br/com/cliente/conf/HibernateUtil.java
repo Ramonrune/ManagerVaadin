@@ -8,11 +8,14 @@ public class HibernateUtil {
 	
 	private static SessionFactory sessionFactory;
 
-	static {
-		sessionFactory = new Configuration().configure().buildSessionFactory();
+	private HibernateUtil() {
+		
 	}
-
-	public static SessionFactory getSessionFactory() {
+	
+	public synchronized static SessionFactory getSessionFactory() {
+		if(sessionFactory == null) {
+			sessionFactory = new Configuration().configure().buildSessionFactory();
+		}
 		return sessionFactory;
 	}
 }
