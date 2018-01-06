@@ -10,20 +10,28 @@ import com.vaadin.ui.renderers.NumberRenderer;
 
 import br.com.cliente.models.Client;
 
-/**
- * Grid of products, handling the visual presentation and filtering of a set of
- * items. This version uses an in-memory data source that is suitable for small
- * data sets.
- */
 public class ClientGrid extends Grid<Client> {
-
+	
     public ClientGrid() {
         setSizeFull();
 
         addColumn(Client::getId, new NumberRenderer()).setCaption("Id");
-        addColumn(Client::getName).setCaption("Product Name");
+        addColumn(Client::getName).setCaption("Nome");
+        addColumn(Client::getEmail).setCaption("E-mail");
+        addColumn(Client::getTelephone).setCaption("Telefone");
 
+       
     }
+    
+    public Client getSelectedRow() {
+        return asSingleSelect().getValue();
+    }
+
+    public void refresh(Client client) {
+        getDataCommunicator().refresh(client);
+    }
+
+    		
 
  
 }

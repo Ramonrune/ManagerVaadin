@@ -14,8 +14,8 @@ import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
 import com.vaadin.ui.themes.ValoTheme;
 
-import br.com.cliente.conf.MyUI;
-import br.com.cliente.views.client.window.NewClientWindowImpl;
+import br.com.cliente.models.Client;
+import br.com.cliente.views.client.window.NewClientWindowPresenter;
 
 /**
  * A view for performing create-read-update-delete operations on products.
@@ -24,12 +24,13 @@ import br.com.cliente.views.client.window.NewClientWindowImpl;
  * operations and controlling the view based on events from outside.
  */
 public class SampleCrudView extends CssLayout implements View {
-
+	
+    private ClientDataProvider dataProvider = new ClientDataProvider();
+	private NewClientWindowPresenter newClientWindowPresenter = new NewClientWindowPresenter(dataProvider);
     public static final String VIEW_NAME = "Clientes";
     private ClientGrid grid;
     private TextField filter;
     private Button newProduct;
-    private NewClientWindowImpl newClientWindow;
 
 
     public SampleCrudView() {
@@ -38,7 +39,12 @@ public class SampleCrudView extends CssLayout implements View {
         HorizontalLayout topLayout = createTopBar();
 
         grid = new ClientGrid();
-     
+        grid.setDataProvider(dataProvider);
+        grid.addItemClickListener((event) ->{
+        	Client model = event.getItem();
+        	newClientWindowPresenter.setModel(model);
+        	newClientWindowPresenter.show();
+        });
 
         VerticalLayout barAndGridLayout = new VerticalLayout();
         barAndGridLayout.addComponent(topLayout);
@@ -61,10 +67,7 @@ public class SampleCrudView extends CssLayout implements View {
         newProduct.addStyleName(ValoTheme.BUTTON_PRIMARY);
         newProduct.setIcon(VaadinIcons.PLUS_CIRCLE);
         newProduct.addClickListener((event) ->{
-        	if(newClientWindow == null)
-        		newClientWindow = new NewClientWindowImpl();
-        	
-        	MyUI.get().addWindow(newClientWindow);
+        	newClientWindowPresenter.show();
         });
         HorizontalLayout topLayout = new HorizontalLayout();
         topLayout.setWidth("100%");
